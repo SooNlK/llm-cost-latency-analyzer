@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from enum import Enum
 
 class RunStatus(str, Enum):
-    SUCCES = "succes"
+    SUCCESS = "success"
     ERROR = "error"
     TIMEOUT = "timeout"
 
@@ -14,7 +14,7 @@ class Prompt:
     text: str
     max_output_tokens: int
     system: str | None = None
-    shared_prefix_id: str | None
+    shared_prefix_id: str | None = None
 
 
 @dataclass(frozen=True)
