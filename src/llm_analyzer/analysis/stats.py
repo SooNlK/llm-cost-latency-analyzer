@@ -1,6 +1,6 @@
 import numpy as np
 
-from llm_analyzer.models import LLMResponse, RunStatus
+from llm_analyzer.models import RunStatus
 
 def mean(latencies: list) -> float:
     if not latencies:
@@ -10,7 +10,7 @@ def mean(latencies: list) -> float:
 
 def median(latencies: list) -> float:
     if not latencies:
-        raise ValueError("Cannot calculate medina from empty list")
+        raise ValueError("Cannot calculate meidan from empty list")
 
     return np.median(latencies)
 
